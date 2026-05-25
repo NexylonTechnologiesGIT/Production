@@ -24,7 +24,7 @@ Production-ready static corporate website for **Nexylon Technologies**, a multin
 Nexylon-Technologies/
 ├── public/
 │   ├── .htaccess          # Apache rewrite rules + security headers
-│   ├── favicon.svg        # Brand favicon
+│   ├── favicon.ico        # Brand favicon
 │   ├── robots.txt         # Search engine directives
 │   └── sitemap.xml        # XML sitemap for all pages
 ├── src/
@@ -139,7 +139,7 @@ public_html/
 ├── index.html
 ├── robots.txt
 ├── sitemap.xml
-├── favicon.svg
+├── favicon.ico
 └── assets/
     ├── index-[hash].css
     ├── vendor-[hash].js

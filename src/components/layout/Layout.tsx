@@ -20,7 +20,7 @@ export default function Layout() {
         Skip to main content
       </a>
       <Header />
-      <main id="main-content" className="flex-1 pt-16 lg:pt-20" tabIndex={-1}>
+      <main id="main-content" className="flex-1 pt-14 lg:pt-16" tabIndex={-1}>
         <Outlet />
       </main>
       <Footer />

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import { Zap, Linkedin, Twitter, Youtube, Github, Mail, Phone, MapPin } from 'lucide-react'
+import { Linkedin, Twitter, Youtube, Github, Mail, Phone, MapPin } from 'lucide-react'
+import logo from '@/assets/logo.png'
 
 const footerLinks = {
   Services: [
@@ -49,13 +50,21 @@ export default function Footer() {
         <div className="grid grid-cols-2 lg:grid-cols-6 gap-10 lg:gap-8">
           {/* Brand column */}
           <div className="col-span-2">
-            <Link to="/" className="flex items-center gap-2.5 mb-4 group w-fit" aria-label="Nexylon Technologies">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center">
-                <Zap size={16} className="text-white" aria-hidden />
+           <Link
+              to="/"
+              className="group inline-flex items-center mb-4 w-fit rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/60 focus-visible:ring-offset-1 focus-visible:ring-offset-transparent"
+              aria-label="Nexylon Technologies"
+            >
+              <div className="flex items-center h-8 sm:h-9 rounded-lg overflow-hidden ring-1 ring-black/[0.07] transition-opacity duration-200 group-hover:opacity-75">
+                <img
+                  src={logo}
+                  alt="Nexylon Technologies"
+                  className="h-full w-auto max-w-[128px] sm:max-w-[144px] object-contain select-none"
+                  width="144"
+                  height="36"
+                  draggable={false}
+                />
               </div>
-              <span className="font-display font-bold text-base text-white">
-                Nexylon<span className="text-blue-400"> Technologies</span>
-              </span>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
               Empowering global enterprises with AI-powered software, cloud transformation, and
